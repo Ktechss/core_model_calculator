@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  corecalculator:
+    build:
+      context: ./CoreCalculator
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - my-network
+
+  corefrontend:
+    build:
+      context: ./CoreFrontend
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    networks:
+      - my-network
+networks:
+  my-network:
+    driver: bridge
+    

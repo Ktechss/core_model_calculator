@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Model Calculator</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Core Model Calculator</h1>
+        <form id="coreForm">
+            <div class="form-group">
+                <label for="coreType">Select Core Model:</label>
+                <select id="coreType" name="coreType">
+                    <option value="">Select...</option>
+                    <option value="EE">EE</option>
+                    <option value="EI">EI</option>
+                    <option value="Toroidal">Toroidal</option>
+                </select>
+            </div>
+
+            <div id="dynamicFields"></div>
+
+            <button type="submit" id="calculateButton" disabled>Calculate</button>
+        </form>
+
+        <div id="result" class="hidden">
+            <h2>Results</h2>
+            <p id="coreFactors"></p>
+            <p id="effectiveVolume"></p>
+            <p id="effectiveLength"></p>
+            <p id="effectiveArea"></p>
+            <p id="minimumArea"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
