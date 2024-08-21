@@ -6,7 +6,7 @@ services:
       context: ./CoreCalculator
       dockerfile: Dockerfile
     ports:
-      - "8080:8080"
+      - "52000:8080"
     networks:
       - my-network
 
@@ -15,7 +15,7 @@ services:
       context: ./CoreFrontend
       dockerfile: Dockerfile
     ports:
-      - "80:80"
+      - "52001:80"
     networks:
       - my-network
 networks:

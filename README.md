@@ -34,8 +34,8 @@ docker-compose up --build
 
 Access the Applications:
 
-Frontend: Open your browser and navigate to http://localhost. The frontend application will be served here.
-Backend: The backend service will be available at http://localhost:8080.
+Frontend: Open your browser and navigate to http://localhost:52001. The frontend application will be served here.
+Backend: The backend service will be available at http://localhost:52000.
 
 Stop and Remove Containers
 docker-compose down

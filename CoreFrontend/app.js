@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         console.log('Collected Data:', data); // Log collected data
 
-        fetch('http://localhost:8080/api/cores/calculate', {
+        fetch('http://localhost:52000/api/cores/calculate', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
